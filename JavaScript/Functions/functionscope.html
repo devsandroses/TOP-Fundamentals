@@ -1,0 +1,29 @@
+//For example, say you have an HTML file that is calling in two external JavaScript files, and both of 
+//them have a variable and a function defined that use the same name:
+
+//HTML
+//Copy to Clipboard
+<!-- Excerpt from my HTML -->
+<script src="first.js"></script>
+<script src="second.js"></script>
+<script>
+  greeting();
+</script>
+JS
+Copy to Clipboard
+// first.js
+const name = "Chris";
+function greeting() {
+  alert(`Hello ${name}: welcome to our company.`);
+}
+JS
+Copy to Clipboard
+// second.js
+const name = "Zaptec";
+function greeting() {
+  alert(`Our company is called ${name}.`);
+}
+//Both functions you want to call are called greeting(), but you can only ever access the first.js file's 
+//greeting() function (the second one is ignored). In addition, an error results when attempting 
+//(in the second.js file) to assign a new value to the name variable — because it was already declared 
+//with const, and so can't be reassigned.

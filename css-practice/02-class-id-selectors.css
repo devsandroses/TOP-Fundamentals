@@ -1,0 +1,14 @@
+/* 02-class-id-selectors.css */
+
+.odd-number {
+    background-color: pink; font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  
+  #Number-2 {
+    color: blue; font-size: 36px;
+  }
+
+  #Number-4 {
+    background-color: lightgreen; font-size: 24px; font-weight: bold;
+  }

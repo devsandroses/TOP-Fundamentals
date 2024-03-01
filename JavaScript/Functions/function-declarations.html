@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+function showMessage() {
+  alert( 'Hello everyone!' );
+}
+
+
+//
+function name(parameter1, parameter2, ... parameterN) {
+ // body
+}
+
+
+//
+function showMessage() {
+  alert( 'Hello everyone!' );
+}
+showMessage();
+showMessage();
+
+//
+function showMessage() {
+  let message = "Hello, I'm JavaScript!"; // local variable
+  alert( message );
+}
+showMessage(); // Hello, I'm JavaScript!
+alert( message ); // <-- Error! The variable is local to the function
+
+
+//
+let userName = 'John';
+function showMessage() {
+  let message = 'Hello, ' + userName;
+  alert(message);
+}
+showMessage(); // Hello, John
+
+
+//
+let userNamez = 'John';
+function showMessage() {
+  userNamez = "Bob"; // (1) changed the outer variable
+
+  let message = 'Hello, ' + userNamez;
+  alert(message);
+}
+alert( userNamez ); // John before the function call
+showMessage();
+alert( userNamez ); // Bob, the value was modified by the function
+
+
+//
+let userNamed = 'John';
+
+function showMessage() {
+  let userNamed = "Bob"; // declare a local variable
+
+  let message = 'Hello, ' + userNamed; // Bob
+  alert(message);
+}
+// the function will create and use its own userName
+showMessage();
+alert( userNamed ); // John, unchanged, the function did not access the outer variable
+
+
+
+//
+
+
+    </script>
+</body>
+</html>

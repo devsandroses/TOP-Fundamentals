@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+for (const cat of cats) {
+  console.log(cat);
+
+  //
+  function toUpper(string) {
+  return string.toUpperCase();
+}
+
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+const upperCats = cats.map(toUpper);
+
+console.log(upperCats);
+}
+
+//
+function lCat(cat) {
+  return cat.startsWith("L");
+}
+
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+const filtered = cats.filter(lCat);
+
+console.log(filtered);
+
+//
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+const filtered = cats.filter((cat) => cat.startsWith("L"));
+console.log(filtered);
+
+//
+const cats = ["Pete", "Biggles", "Jasmine"];
+
+let myFavoriteCats = "My cats are called ";
+
+for (let i = 0; i < cats.length; i++) {
+  if (i === cats.length - 1) {
+    // We are at the end of the array
+    myFavoriteCats += `and ${cats[i]}.`;
+  } else {
+    myFavoriteCats += `${cats[i]}, `;
+  }
+}
+
+console.log(myFavoriteCats);
+
+//This works in a very similar way to the for loop, except that the initializer variable is set before 
+//the loop, and the final-expression is included inside the loop after the code to run, rather than 
+//these two items being included inside the parentheses. The condition is included inside the parentheses, 
+//which are preceded by the while keyword rather than for.
+initializer
+while (condition) {
+  // code to run
+
+  final-expression
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+let a=3
+let b=4
+result = a || b;
+console.log(a,b)
+
+alert( true || true );   // true
+alert( false || true );  // true
+alert( true || false );  // true
+alert( false || false ); // false
+console.log(true,false)
+
+if (1 || 0) { // works just like if( true || false )
+  alert( 'truthy!' );
+}
+console.log (1,0)
+
+let hour = 9;
+
+if (hour < 10 || hour > 18) {
+  alert( 'The office is closed.' );
+}
+console.log(hour)
+
+let hourz = 12;
+let isWeekend = true;
+
+if (hourz < 10 || hourz > 18 || isWeekend) {
+  alert( 'The office is closed.' ); // it is the weekend
+}
+console.log(hourz)
+
+alert( 1 || 0 ); // 1 (1 is truthy)
+console.log (1,0)
+
+alert( null || 1 ); // 1 (1 is the first truthy value)
+alert( null || 0 || 1 ); // 1 (the first truthy value)
+console.log(null,1,0)
+
+alert( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+console.log(undefined,null)
+
+let firstName = "";
+let lastName = "";
+let nickName = "SuperCoder";
+
+alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder
+console.log(firstName,lastName,nickName)
+
+true || alert("not printed");
+false || alert("printed");
+
+alert( true && true );   // true
+alert( false && true );  // false
+alert( true && false );  // false
+alert( false && false ); // false
+console.log(true,false)
+
+let hours = 12;
+let minute = 30;
+
+if (hours == 12 && minute == 30) {
+  alert( 'The time is 12:30' );
+}
+console.log(hours,minute)
+
+if (1 && 0) { // evaluated as true && false
+  alert( "won't work, because the result is falsy" );
+}
+console.log(1,0)
+
+// if the first operand is truthy,
+// AND returns the second operand:
+alert( 1 && 0 ); // 0
+alert( 1 && 5 ); // 5
+console.log(1,0,5)
+
+// if the first operand is falsy,
+// AND returns it. The second operand is ignored
+alert( null && 5 ); // null
+alert( 0 && "no matter what" ); // 0
+console.log(1,0,5,null)
+
+//We can also pass several values in a row. See how the first falsy one is returned:
+alert( 1 && 2 && null && 3 ); // null
+console.log(1,2,3,null)
+
+//When all values are truthy, the last value is returned:
+ alert( 1 && 2 && 3 ); // 3, the last one
+ console.log(1,2,3)
+
+</script>
+
+</body>
+</html>

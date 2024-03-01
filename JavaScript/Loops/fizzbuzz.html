@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+for (let i = 1; i <= answer; i++) {
+//We declare a variable i and assign it 1: the initial value of the variable i in our loop.
+//The second clause, i <= answer is our condition. We want to loop until i is greater than answer. 
+//The third clause, i++, tells our loop to increment i by 1 every iteration. As a result, 
+//if the user inputs 10, this loop would print numbers 1 - 10 to the console. 
+  if (i % 3 === 0 && i % 5 === 0) {
+    //We are using the modulus operator (%) here to divide the current number by three. 
+    //The modulus operator returns the remainder of a division. 
+    //So if a remainder of 0 is returned from the division, it means the current number is divisible by 3 and 5.
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
+
+</script>
+
+</body>
+</html>

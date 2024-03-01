@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+if ("0") {
+  alert( 'Hello' );
+}
+
+let accessAllowed;
+let agez = prompt('How old are you?', '');
+if (agez > 18) {
+  accessAllowed = true;
+} else {
+  accessAllowed = false;
+}
+alert(accessAllowed);
+console.log(accessAllowed,agez)
+
+
+let age = prompt('age?', 18);
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 100) ? 'Greetings!' :
+  'What an unusual age!';
+alert( message );
+console.log (age, message)
+if (age < 3) {
+  message = 'Hi, baby!';
+} else if (age < 18) {
+  message = 'Hello!';
+} else if (age < 100) {
+  message = 'Greetings!';
+} else {
+  message = 'What an unusual age!';
+}
+
+
+
+let company = prompt('Which company created JavaScript?', '');
+(company == 'Netscape') ?
+   alert('Right!') : alert('Wrong.');
+
+
+let companyz = prompt('Which company created JavaScript?', '');
+if (companyz == 'Netscape') {
+  alert('Right!');
+} else {
+  alert('Wrong.');
+}
+
+
+let result;
+if (a + b < 4) {
+  result = 'Below';
+} else {
+  result = 'Over';
+}
+//this is the same with removing the if conditional operator:
+let resultz = (a + b < 4) ?'Below' : 'Over';
+
+
+let messages;
+if (login == 'Employee') {
+  messages = 'Hello';
+} else if (login == 'Director') {
+  messages = 'Greetings';
+} else if (login == '') {
+  messages = 'No login';
+} else {
+  messages = '';
+}
+//this is the same, removing the if conditional operator:
+let messagez = (loginz == 'Employee') ? 'Hello' :
+  (loginz == 'Director') ? 'Greetings' :
+  (loginz == '') ? 'No login' :
+  '';
+
+    </script>
+</body>
+</html>

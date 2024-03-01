@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        js //pseudocode included as a comment
+//1. Prompt player to input their choice 
+let playerSelection = prompt ("Rock, paper or scissors?").toLowerCase(); 
+//2. Tell computer the choices
+const choices = ['Rock', 'Paper', 'Scissors'];
+//3.Have the choice be randomized
+let choice = choices[Math.floor(Math.random() * choices.length)];
+//4.Have computerChoice function return the choice
+function getComputerChoice (){
+return  choice
+    }
+//5. Play a single round
+function playRound(playerSelection, computerSelection){
+return choice, prompt;
+//6. The computer needs to know the rules in order to delcare a winner or tie
+if (playerSelection === 'rock') {
+    return 'Rock beats scissors!';
+    alert ('Rock beats scissors!');
+} if (playerSelection === 'paper'){
+    return 'Paper beats rock!';
+    alert ('Paper beats rock!')
+} else if (playerSelection === 'scissors') {
+    return 'Scissors beat paper'
+    alert ('Scissors beat paper')
+} else {
+    return alert ('Its a tie!')
+}
+}    
+    </script>
+</body>
+</html>
